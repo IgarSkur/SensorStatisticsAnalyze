@@ -10,7 +10,13 @@ lazy val root = (project in file(".")).
 libraryDependencies ++= Seq(
   "org.typelevel" %% "cats-core" % "2.4.0",
   "org.typelevel" %% "cats-effect" % "2.4.0",
-  "org.scala-lang.modules" %% "scala-async" % "1.0.1"
+  "org.scala-lang.modules" %% "scala-async" % "1.0.1",
+  "com.typesafe.akka" %% "akka-actor" % "2.6.10" ,
+  "com.typesafe.akka" %% "akka-stream" % "2.6.10",
+  "com.typesafe.akka" %% "akka-cluster" % "2.6.10",
+  "com.typesafe.akka" %% "akka-cluster-sharding" % "2.6.10",
+  "org.scalatest" %% "scalatest" % "3.1.1"
+
 )
 
 // Your username to login to Databricks Cloud
